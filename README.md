@@ -3,7 +3,7 @@
 
 [OpenBOR](http://www.chronocrash.com/) is a royalty free sprite based side scrolling gaming engine, based on the source code of the [Beats of Rage](https://en.wikipedia.org/wiki/Beats_of_Rage) game published by [Senile Team](http://www.senileteam.com) back in 2004. **Beats of Rage** is an open-source 2D customisable video game engine inspired by Sega's classic [Streets of Rage](https://en.wikipedia.org/wiki/Streets_of_Rage "Streets of Rage") series of [beat'em up](https://en.wikipedia.org/wiki/Beat%27em_up "Beat'em up") games.
 
-From humble beginnings, it has since grown into the most versatile, easy to use, and powerful engine of its type you will find anywhere. **OpenBOR Engine** is optimized for side scrolling beat em’ up style games ([Double Dragon](https://en.wikipedia.org/wiki/Double_Dragon), [Streets of Rage](https://en.wikipedia.org/wiki/Streets_of_Rage), [Final Fight](https://en.wikipedia.org/wiki/Final_Fight)...), but easily accommodates any sort of gameplay style and feature set you can imagine.
+From humble beginnings, **OpenBOR Engine** has since grown into the most versatile, easy to use, and powerful engine of its type you will find anywhere. **OpenBOR** is optimized for side scrolling beat em’ up style games ([Double Dragon](https://en.wikipedia.org/wiki/Double_Dragon), [Streets of Rage](https://en.wikipedia.org/wiki/Streets_of_Rage), [Final Fight](https://en.wikipedia.org/wiki/Final_Fight)...), but easily accommodates any sort of gameplay style and feature set you can imagine.
 
 **This repository contains the last version supporting the Sega Dreamcast platform**. The current version of the **OpenBOR Engine** is available [here](https://github.com/DCurrent/openbor).
 
@@ -23,13 +23,19 @@ The `v3.0 Build 4111` release of the official source code was the last source co
 
 Instead of the [Beats of Rage Rumble Edition for Sega Dreamcast](https://github.com/sega-dreamcast/beats-of-rage) project, there is no full SDK provided here for building the engine: you'll need a [KallistiOS](http://gamedev.allusion.net/softprj/kos/) `2.0.0+` environment installed in your computer to do that. It can be either [an installation you did with the standard ways](http://gamedev.allusion.net/softprj/kos/setup.php) or you can use [DreamSDK](https://www.dreamsdk.org/) if you are using *Windows*.
 
-Please also note, the contents of this repository is only the **OpenBOR Engine**, there is NO game assets at all. You'll need to use a Sega Dreamcast compatible `BOR.PAK` file along with the engine built with this source code.
+Please also note, the contents of this repository is only for the **OpenBOR Engine**, there is NO game assets at all. You'll need to use a Sega Dreamcast compatible `BOR.PAK` file along with the engine built with this source code to have something that works.
 
 To build the **OpenBOR Engine for Sega Dreamcast**:
+
 1. Open your Shell.
-2. Clone this repository: `git clone https://github.com/sega-dreamcast/openbor.git`
+2. Clone this repository: 
+
+	git clone https://github.com/sega-dreamcast/openbor.git
+	
 3. Enter the `openbor` directory.
-4. Enter the following command: `./build.sh`.
+4. Enter the following command: 
+
+	./build.sh
 
 A `bin` directory will be created containing the engine binary (`OpenBOR.elf` and `OpenBOR.bin` files). Your **OpenBOR Engine** is now ready to be used on the Sega Dreamcast!
 
