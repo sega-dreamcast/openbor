@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# OpenBOR specific files
+bin/
+engine/OpenBOR.bin
+engine/resources/Info.plist
+engine/resources/meta.xml
+engine/version.h
