@@ -68,7 +68,7 @@ static unsigned long stackSize = 0x00000000;
 #ifndef WIN
 #ifndef XBOX
 #ifndef LINUX
-#if (__GNUC__ > 3)
+#if (__GNUC__ > 3) && !DC
 extern unsigned long _end;
 extern unsigned long _start;
 #else

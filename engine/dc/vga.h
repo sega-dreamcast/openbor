@@ -16,7 +16,7 @@ void vga_setmode(int m);
 void vga_vwait(void);
 
 // Set VGA-type palette
-void vga_setpalette(char*p);
+void vga_setpalette(unsigned char*p);
 
 // Set VGA border colour index
 void vga_setborderindex(int n);

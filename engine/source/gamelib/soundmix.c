@@ -40,7 +40,7 @@ Caution: move vorbis headers here otherwise the structs will
  get poisoned by #pragma in other header files, i.e. list.h
 */
 #ifdef DC
-#include <ivorbisfile.h>
+#include <vorbis/include/ivorbisfile.h>
 #elif TREMOR
 #include <tremor/ivorbisfile.h>
 #else

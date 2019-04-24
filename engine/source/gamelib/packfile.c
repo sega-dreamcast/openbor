@@ -1167,7 +1167,7 @@ int find_iso_file(const char *filename, int lba, int *bytes)
         {
             break;
         }
-        if(!fncmp(filename, sector + secofs + 33, sector[secofs + 32]))
+        if(!fncmp(filename, (const char *) sector + secofs + 33, sector[secofs + 32]))
         {
             lba = 150 + readmsb32(sector + secofs + 6);
             if(bytes)

@@ -219,15 +219,14 @@ endif
 
 ifdef BUILD_DC
 TARGET 	        = $(VERSION_NAME).elf
-TARGET_FINAL    = 1ST_READ.BIN
+TARGET_FINAL    = $(VERSION_NAME).bin
 TARGET_PLATFORM = DC
 BUILDING        = 1
 INCLUDES        = $(KOS_BASE)/../kos-ports/include/SDL \
-                  $(KOS_BASE)/../kos-ports/include/SDL-1.2.9 \
                   $(KOS_BASE)/../kos-ports/include/png \
                   $(KOS_BASE)/../kos-ports/include/zlib \
-                  $(KOS_BASE)/../kos-ports/include/liboggvorbis \
-                  $(KOS_BASE)/../kos-ports/libtremor/xiph
+                  $(KOS_BASE)/../kos-ports/include/ogg \
+				  $(KOS_BASE)/../kos-ports/include/vorbis/include
 ifeq ($(BUILD_DC), 0)
 BUILD_DEBUG     = 1
 endif
@@ -519,7 +518,7 @@ endif
 
 ifndef BUILD_DEBUG
 ifdef BUILD_DC
-CFLAGS 	       += -O9
+CFLAGS 	       +=
 else
 CFLAGS 	       += -O2
 endif
@@ -668,7 +667,7 @@ endif
 
 
 ifdef BUILD_DC
-LIBS           += -lc -lgcc -lSDL_129 -ltremor
+LIBS           += -lSDL -ltremor
 endif
 
 

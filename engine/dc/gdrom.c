@@ -205,7 +205,7 @@ tryinit:
   param[1] = 8192;  // ?
   param[2] = 0;     // autodetect read mode
   param[3] = 2048;  // sector size
-  if(bios_gdGdcChangeDataType(param) < 0) goto tryinit;
+  if(bios_gdGdcChangeDataType((unsigned int *) param) < 0) goto tryinit;
 
   // Try to read the TOC
   param[0] = 0; // session
