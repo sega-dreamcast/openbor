@@ -28,14 +28,13 @@ Please also note, the contents of this repository is only for the **OpenBOR Engi
 To build the **OpenBOR Engine for Sega Dreamcast**:
 
 1. Open your Shell.
-2. Clone this repository: 
-
-	git clone https://github.com/sega-dreamcast/openbor.git
-	
+2. Clone this repository:
+ 
+		git clone https://github.com/sega-dreamcast/openbor.git	
 3. Enter the `openbor` directory.
-4. Enter the following command: 
-
-	./build.sh
+4. Enter the following command:
+ 
+		./build.sh
 
 A `bin` directory will be created containing the engine binary (`OpenBOR.elf` and `OpenBOR.bin` files). Your **OpenBOR Engine** is now ready to be used on the Sega Dreamcast!
 
